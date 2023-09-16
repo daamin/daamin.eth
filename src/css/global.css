@@ -1,0 +1,131 @@
+@font-face {
+	font-family: 'AveriaSefirLibre';
+	src: url('/fonts/AveriaSerifLibre-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background: #514378;
+	background: -webkit-linear-gradient(90deg, #382c5a, #514378, #382c5a);
+	background: linear-gradient(90deg, #382c5a, #514378, #382c5a);
+	padding-top: 5em;
+	display: flex;
+	justify-content: center;
+	font-family: 'AveriaSefirLibre';
+	text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.25);
+	color: #fff;
+}
+
+main {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	top: 0;
+	bottom: 50px;
+}
+
+main .container {
+	width: 100%;
+	text-align: center;
+	margin: auto;
+}
+
+main .container .maintext {
+	display: block;
+	font-size: 40px;
+	font-weight: 600;
+}
+
+main .container .maintext .cmd {
+	color: orange;
+}
+
+main .container .maintext .blinking {
+	font-weight: 500;
+	color: orange;
+}
+
+main .container.about img#logo {
+	filter: drop-shadow(9px 9px 3px rgba(0, 0, 0, 0.2));
+	height: 200px;
+	margin: auto;
+}
+main .container.about .mottotext {
+	font-size: 16px;
+	padding: 0;
+	font-weight: 500;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: 100px;
+	justify-content: center;
+}
+main .container.about .mottotext div {
+	padding: 0 2px;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+footer a {
+	cursor: pointer;
+}
+
+footer img {
+	filter: drop-shadow(9px 9px 3px rgba(0, 0, 0, 0.2));
+	height: 50px;
+	margin: 50px 18px;
+	display: inline-block;
+}
+
+footer .tooltip {
+	margin-top: -20px;
+	background-color: orange;
+}
+
+@media (min-width: 640px) {
+	main .container .maintext {
+		font-size: 65px;
+	}
+	main .container.about .mottotext {
+		font-size: 24px;
+	}
+	main .container.about .mottotext div {
+		padding: 0 4px;
+	}
+}
+
+@media (min-width: 768px) {
+	main .container .maintext {
+		font-size: 80px;
+	}
+	main .container.about .mottotext {
+		font-size: 30px;
+	}
+	main .container.about .mottotext div {
+		padding: 0 10px;
+	}
+	footer img {
+		margin: 50px;
+	}
+}
+
+@media (min-width: 1024px) {
+	main .container .maintext {
+		font-size: 100px;
+	}
+	main .container.about .mottotext {
+		font-size: 40px;
+	}
+}
+
+@media (min-width: 1280px) {
+	main .container.about .mottotext {
+		font-size: 50px;
+	}
+}
