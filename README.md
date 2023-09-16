@@ -1,6 +1,6 @@
 # Daamin.eth
 
-Building an immutable world for limitless freedom.
+Building an immutable world for limitless freedom
 
 ## Installation
 
