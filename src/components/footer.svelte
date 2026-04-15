@@ -26,17 +26,17 @@
 			<a id="about" href="./about"><img src="{assets}/profile.svg" alt="About Me" /></a>
 			<Tooltip triggeredBy="#about">About Me</Tooltip>
 		{/if}
-		<a id="discord" href="https://discordapp.com/users/@daamin.eth" target="_blank"
+		<a id="discord" href="https://discord.com/users/446113075209306122" target="_blank"
 			><img src="{assets}/discord.svg" alt="Discord" /></a
 		>
 		<Tooltip triggeredBy="#discord">Discord</Tooltip>
+		<a id="ens" href="https://app.ens.domains/daamin.eth" target="_blank"
+			><img src="{assets}/ens.svg" alt="ENS" /></a
+		>
+		<Tooltip triggeredBy="#ens">ENS</Tooltip>
 		<a id="github" href="https://github.com/daamin" target="_blank"
 			><img src="{assets}/github.svg" alt="GitHub" /></a
 		>
 		<Tooltip triggeredBy="#github">GitHub</Tooltip>
-		<a id="twitter" href="https://twitter.com/daamin_eth" target="_blank"
-			><img src="{assets}/twitter.svg" alt="Twitter" /></a
-		>
-		<Tooltip triggeredBy="#twitter">Twitter</Tooltip>
 	</footer>
 {/if}
