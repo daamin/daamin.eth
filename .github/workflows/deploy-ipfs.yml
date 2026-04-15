@@ -24,7 +24,7 @@ jobs:
           pin-name: daamin.eth
           path: build
           pinata-api-key: ${{ secrets.PINATA_API_KEY }}
-          pinata-secret-api-key: ${{ secrets.PINATA_SECRET_API_KEY }}
+          pinata-secret-api-key: ${{ secrets.PINATA_API_SECRET }}
 
       - name: Show IPFS CID
         run: echo "Deployed to IPFS — CID:${{ steps.pin.outputs.hash }}"
