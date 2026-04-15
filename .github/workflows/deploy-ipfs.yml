@@ -1,0 +1,30 @@
+name: Pinata connector
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Pin to IPFS via Pinata
+        uses: anantaramdas/ipfs-pinata-deploy-action@v1.6.4
+        id: pin
+        with:
+          pin-name: daamin.eth
+          path: build
+          pinata-api-key: ${{ secrets.PINATA_API_KEY }}
+          pinata-secret-api-key: ${{ secrets.PINATA_SECRET_API_KEY }}
+
+      - name: Show IPFS CID
+        run: echo "Deployed to IPFS — CID:${{ steps.pin.outputs.hash }}"
