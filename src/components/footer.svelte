@@ -34,9 +34,9 @@
 			><img src="{assets}/ens.svg" alt="ENS" /></a
 		>
 		<Tooltip triggeredBy="#ens">ENS</Tooltip>
-		<a id="github" href="https://github.com/daamin" target="_blank"
-			><img src="{assets}/github.svg" alt="GitHub" /></a
+		<a id="twitter" href="https://twitter.com/daamin_eth" target="_blank"
+			><img src="{assets}/twitter.svg" alt="Twitter" /></a
 		>
-		<Tooltip triggeredBy="#github">GitHub</Tooltip>
+		<Tooltip triggeredBy="#twitter">Twitter</Tooltip>
 	</footer>
 {/if}
